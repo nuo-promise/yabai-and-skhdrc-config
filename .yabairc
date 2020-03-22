@@ -6,7 +6,7 @@ gaps_top="30"
 gaps_bottom="20"
 gaps_left="10"
 gaps_right="10"
-gaps_inner="10"
+gaps_inner="6"
 
 normal_border_color="010101"
 focused_border_color="570195"
@@ -41,7 +41,7 @@ yabai -m config auto_balance                off
 # ====== Border settings =======================
 
 yabai -m config window_border               on
-yabai -m config window_border_width         2
+yabai -m config window_border_width					3
 yabai -m config active_window_border_color  "0xE0${focused_border_color}"
 yabai -m config insert_window_border_color  "0xE0${preselect_border_color}"
 yabai -m config normal_window_border_color  "0x00${normal_border_color}"
