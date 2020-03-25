@@ -1,13 +1,13 @@
 # terminal - like Linux
 ctrl + alt - t : open -na /Applications/Alacritty.app
 ctrl + alt - g : open -na /Applications/Brave\ Browser.app
-ctrl + alt - s : open -na /Applications/Spotify.app
 ctrl + alt - p : screencapture ~/Desktop/capture.jpg
 ctrl + alt - n : open -na /Applications/Notion.app
 ctrl + alt - v : open -na /Applications/Visual\ Studio\ Code.app
 ctrl + alt - c : open -na /Applications/CleanMyMac\ X.app
 ctrl + alt - m : open -na /Applications/Brave\ Browser.app https://www.messenger.com
 ctrl + alt - b : open -na /Applications/coconutBattery.app
+ctrl + alt - s : open -na /Applications/JQBX.app
 
 shift + alt - space : yabai -m window --toggle float
 
@@ -27,15 +27,21 @@ shift + cmd - k : yabai -m window --warp north
 shift + cmd - l : yabai -m window --warp east
 
 # Move focus container to workspace
-shift + cmd - m : yabai -m window --space last && yabai -m space --focus last
 shift + cmd - p : yabai -m window --space prev && yabai -m space --focus prev
-shift + cmd - n : yabai -m window --space next && yabai -m space --focus next
-shift + cmd - 1 : yabai -m window --space 1 && yabai -m space --focus 1
-shift + cmd - 2 : yabai -m window --space 2 && yabai -m space --focus 2
-shift + cmd - 3 : yabai -m window --space 3 && yabai -m space --focus 3
-shift + cmd - 4 : yabai -m window --space 4 && yabai -m space --focus 4
-shift + cmd - 5 : yabai -m window --space 5 && yabai -m space --focus 5
-shift + cmd - 6 : yabai -m window --space 6 && yabai -m space --focus 6
+shift + cmd - 1 : yabai -m window --space 1
+shift + cmd - 2 : yabai -m window --space 2
+shift + cmd - 3 : yabai -m window --space 3
+shift + cmd - 4 : yabai -m window --space 4
+shift + cmd - 5 : yabai -m window --space 5
+shift + cmd - 6 : yabai -m window --space 6
+
+# Move all the container to workspace
+shift + alt - 1 : yabai -m space --move 1
+shift + alt - 2 : yabai -m space --move 2
+shift + alt - 3 : yabai -m space --move 3
+shift + alt - 4 : yabai -m space --move 4
+shift + alt - 5 : yabai -m space --move 5
+shift + alt - 6 : yabai -m space --move 6
 
 alt - r : yabai -m space --rotate 90
 
@@ -75,5 +81,5 @@ cmd + alt - w : chunkc tiling::desktop --annihilate
 # Restart Yabai
 shift + lctrl + alt - r :
     /usr/bin/env osascript <<< \
-        "display notification \"Restarting Yabai\" with title \"Yabai\""; \
+        "display notification \"Mother fucker restart\" with title \"Louis Yabai\""; \
     launchctl kickstart -k "gui/${UID}/homebrew.mxcl.yabai"
